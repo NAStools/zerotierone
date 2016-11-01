@@ -1,5 +1,5 @@
 <Application resource-id="nastools-zerotier-one">
-  <Version></Version>
+  <Version>1.1.14-nt1</Version>
   <MinFirmwareVer>6.6.0</MinFirmwareVer>
   <Name>ZeroTier One NT</Name>
   <Author>NAStools</Author>
