@@ -1,17 +1,17 @@
 Source: zerotier-one
-Maintainer: Adam Ierymenko <adam.ierymenko@zerotier.com>
+Maintainer: NAStools <dev@nas.tools>
 Section: net
 Priority: optional
 Standards-Version: 3.9.6
-Build-Depends: debhelper (>= 9), liblz4-dev, libnatpmp-dev, dh-systemd, ruby-ronn
-Vcs-Git: git://github.com/zerotier/ZeroTierOne
-Vcs-Browser: https://github.com/zerotier/ZeroTierOne
-Homepage: https://www.zerotier.com/
+Build-Depends: debhelper (>= 9), liblz4-dev, libnatpmp-dev, ruby-ronn
+Vcs-Git: git://github.com/nastools/zerotierone
+Vcs-Browser: https://github.com/nastools/zerotierone
+Homepage: https://www.zerotier.com
 
-Package: zerotier-one
+Package: nastools-zerotier-one
 Architecture: any
-Depends:  ${shlibs:Depends}, ${misc:Depends}, liblz4-1, libnatpmp1, iproute2
-Homepage: https://www.zerotier.com/
+Depends:  readynasos (>= 6.6.0), ${shlibs:Depends}, ${misc:Depends},
+          libnatpmp1, iproute2
 Description: ZeroTier network virtualization service
  ZeroTier One lets you join ZeroTier virtual networks and
  have them appear as tun/tap ports on your system. See

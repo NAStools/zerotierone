@@ -1,0 +1,5 @@
+## Overrides from NAStools
+# Nothing we can do about these, since they're upstream
+zerotier-one source: source-is-missing ext/installfiles/mac/ui/ztui.min.js
+zerotier-one source: source-is-missing ext/installfiles/mac/ui/simpleajax.min.js
+zerotier-one source: source-is-missing ext/installfiles/mac/ui/react.min.js

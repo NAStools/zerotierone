@@ -1,0 +1,4 @@
+debian/readynas/config.xml apps/nastools-zerotier-one
+debian/readynas/fvapp-nastools-zerotier-one.service apps/nastools-zerotier-one
+debian/readynas/logo.png apps/nastools-zerotier-one
+zerotier-one apps/nastools-zerotier-one/sbin

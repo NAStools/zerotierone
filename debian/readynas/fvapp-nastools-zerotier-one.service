@@ -1,9 +1,9 @@
 [Unit]
 Description=ZeroTier One
-After=network.target
+After=network.target apache2.service
 
 [Service]
-ExecStart=/usr/sbin/zerotier-one
+ExecStart=/apps/nastools-zerotier-one/sbin/zerotier-one
 Restart=always
 KillMode=process
 

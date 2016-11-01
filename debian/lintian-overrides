@@ -1,0 +1,7 @@
+## Overrides from NAStools
+# Overrides for ReadyNAS packaging
+nastools-zerotier-one: non-standard-toplevel-dir apps/
+nastools-zerotier-one: file-in-unusual-dir apps/nastools-zerotier-one/*
+
+# Debian's libminiupnpc is too old, so let ZT include its own
+nastools-zerotier-one: embedded-library apps/nastools-zerotier-one/sbin/zerotier-one: libminiupnpc

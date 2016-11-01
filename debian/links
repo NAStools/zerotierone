@@ -1,0 +1,3 @@
+apps/nastools-zerotier-one/sbin/zerotier-one usr/sbin/zerotier-cli
+apps/nastools-zerotier-one/sbin/zerotier-one usr/sbin/zerotier-idtool
+apps/nastools-zerotier-one/sbin/zerotier-one usr/sbin/zerotier-one

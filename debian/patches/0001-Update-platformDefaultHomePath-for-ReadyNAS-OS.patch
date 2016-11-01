@@ -1,0 +1,23 @@
+From: NAStools <dev@nas.tools>
+Date: Tue, 1 Nov 2016 16:09:41 -0700
+Subject: Update platformDefaultHomePath() for ReadyNAS OS
+
+---
+ osdep/OSUtils.cpp | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/osdep/OSUtils.cpp b/osdep/OSUtils.cpp
+index 3a04308..0a9ade6 100644
+--- a/osdep/OSUtils.cpp
++++ b/osdep/OSUtils.cpp
+@@ -244,8 +244,8 @@ std::string OSUtils::platformDefaultHomePath()
+ 	// BSD likes /var/db instead of /var/lib
+ 	return std::string("/var/db/zerotier-one");
+ #else
+-	// Use /var/lib for Linux and other *nix
+-	return std::string("/var/lib/zerotier-one");
++	// Use /apps/nastools-zerotier-one/var for ReadyNAS OS
++	return std::string("/apps/nastools-zerotier-one/var");
+ #endif
+ 
+ #endif
