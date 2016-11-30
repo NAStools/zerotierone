@@ -4,10 +4,10 @@
   <Name>ZeroTier One NT</Name>
   <Author>NAStools</Author>
   <RequireReboot>0</RequireReboot>
-  <LaunchURL/>
+  <LaunchURL>https://localhost/apps/nastools-zerotier-one/ui/</LaunchURL>
   <InfoURL>https://github.com/nastools/zerotierone</InfoURL>
   <DebianPackage>nastools-zerotier-one</DebianPackage>
-  <Description lang="en-us">ZeroTier network virtualization service (CLI only)</Description>
+  <Description lang="en-us">ZeroTier network virtualization service</Description>
   <ServiceName>fvapp-nastools-zerotier-one.service</ServiceName>
   <ConfigURL/>
 </Application>

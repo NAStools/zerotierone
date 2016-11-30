@@ -3,4 +3,12 @@
 %:
 	dh $@
 
+override_dh_auto_build:
+	make ZT_USE_MINIUPNPC=1 -j$(nproc)
+	gcc $$(pwd)/debian/readynas/authtoken.c -o $$(pwd)/debian/readynas/authtoken
+	chmod u+s $$(pwd)/debian/readynas/authtoken
+
+override_dh_fixperms:
+	dh_fixperms -Xauthtoken
+
 override_dh_auto_install:

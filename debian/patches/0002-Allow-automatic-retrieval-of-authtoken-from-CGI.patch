@@ -1,0 +1,27 @@
+From: NAStools <dev@nas.tools>
+Date: Tue, 29 Nov 2016 17:41:16 -0800
+Subject: Allow automatic retrieval of authtoken from CGI
+
+---
+ ext/installfiles/mac/ui/main.js | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+diff --git a/ext/installfiles/mac/ui/main.js b/ext/installfiles/mac/ui/main.js
+index a164712..08d716f 100644
+--- a/ext/installfiles/mac/ui/main.js
++++ b/ext/installfiles/mac/ui/main.js
+@@ -42,7 +42,13 @@ function getUrlParameter(parameter)
+ 
+ var ztAuthToken = getUrlParameter('authToken');
+ if ((!ztAuthToken)||(ztAuthToken.length <= 0)) {
+-	ztAuthToken = prompt('No authToken specified in URL. Enter token from\nauthtoken.secret to authorize.');
++	xmlhttp = new XMLHttpRequest();
++        xmlhttp.open("GET", "/apps/nastools-zerotier-one/cgi/authtoken", false);
++        xmlhttp.send();
++        ztAuthToken = xmlhttp.responseText;
++	if ((!ztAuthToken)||(ztAuthToken.length <= 0)) {
++		ztAuthToken = prompt('No authToken specified in URL. Enter token from\nauthtoken.secret to authorize.');
++	}
+ }
+ 
+ React.render(
