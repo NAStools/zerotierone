@@ -1,3 +1,10 @@
+zerotier-one (1.1.14-nt2) unstable; urgency=medium
+
+  * Include UI from macOS client
+  * Configure package to use UI from macOS client
+
+ -- NAStools <dev@nas.tools>  Tue, 29 Nov 2016 18:02:28 -0800
+
 zerotier-one (1.1.14-nt1) unstable; urgency=medium
 
   * Initial release
