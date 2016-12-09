@@ -1,3 +1,9 @@
+zerotier-one (1.1.14-nt3) unstable; urgency=medium
+
+  * Clean up authtoken CGI
+
+ -- NAStools <dev@nas.tools>  Fri, 09 Dec 2016 10:20:55 -0800
+
 zerotier-one (1.1.14-nt2) unstable; urgency=medium
 
   * Include UI from macOS client
